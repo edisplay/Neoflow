@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   eslint: {
-    ignoreDuringBuilds: true, // FIXME
+    ignoreDuringBuilds: false,
   },
   typescript: {
-    ignoreBuildErrors: true, // FIXME
+    ignoreBuildErrors: false,
   },
   webpack(config) {
     config.experiments = { ...config.experiments, topLevelAwait: true };
